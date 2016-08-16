@@ -11,7 +11,17 @@
         tools:context="trafficlock.kosherbacon.com.trafficlock.MainActivity">
 
     <TextView
-            android:text="Hello World!"
+            android:text="@string/welcome"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:id="@+id/welcome_msg"
+            android:textSize="50sp"/>
+    <TextView
+            android:text="@string/no_alarms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/welcome_msg"
+            android:layout_centerInParent="true"
+            android:id="@+id/alarm_status"/>
 </RelativeLayout>
